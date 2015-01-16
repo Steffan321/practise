@@ -1,0 +1,552 @@
+<!doctype html>
+<html>
+
+<head>
+	<title> Seite nachbauen </title>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<style type="text/css">
+	
+	
+	
+	p {
+		margin:0;
+		padding:0;
+	}
+	
+	.break {
+		clear:both;
+	}
+	
+	h2{
+		margin:0;
+	}
+	
+	.floatLeft{
+		float:left;
+	}
+	
+	h6 {
+		margin:0;
+		font-weight:normal;
+	}
+	
+	body{
+         margin:0;
+		 padding:0;
+    }
+	
+	.fixedwidth{
+		width:2000px;
+	}
+         
+	
+	/*h1{
+		font-size:1.4em;
+		margin:0;
+		float:left;
+		font-weight:bold;
+	}*/
+	
+	image{
+		margin:0;
+		padding:0;
+	}
+	
+	#ersteZeile {
+		padding:0;
+		margin:0;
+		width:100%;
+		background-color:#E0E3E0;
+		height:45px;
+	}
+	
+	#linksOben{
+		padding:9px 0 0 5px;
+		float:left;
+	}
+	
+	#abo {
+		float:left;
+		padding: 4px 8px 0 456px;
+		border-right:solid 1px #b5bab5;
+		
+		
+	}
+	
+	#mond {
+		float:left;
+		margin:11px 0 0 7px;
+	}
+	
+	#temp {
+		float:left;
+		margin:9px 0 0 5px;
+	}
+	
+	#search {
+		float:left;
+		padding:10px 0 0 16px;
+		
+	}
+	
+	#search input {
+		width:198px;
+		height:21px;
+		background-image: url("images/lupe.png");
+		font-size:1.3em;
+		border-style:none;
+		background-repeat:no-repeat;
+		background-position:right center;
+		border: 1px solid #b5bab5;
+		padding-left:2;
+	}
+	
+	#zweiteZeile {
+	
+	}
+	
+	#eins {
+		background-color:#FFFFFF;
+		height:18px;
+		width:100%;
+	}
+	
+	#zwei {
+		background-color:#666666;
+		height:18px;
+		width:100%;
+	}
+	
+	#eins ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+		font-family: Arial,Helvetica,sans-serif;
+		font-size:0.8em;
+	}
+	
+	#eins li{
+		float:left;
+		padding-left:17px;
+		color:#707170;
+	}
+	
+	#zwei ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+		font-family: Arial,Helvetica,sans-serif;
+		font-size:0.8em;
+		color:white;
+	}
+	
+	#zwei li{
+		float:left;
+		padding-left:18px;
+	}
+	
+	#drei{
+		margin:0;
+		padding:2px 0 0 16px;
+		list-style:none;
+		font-family: Arial,Helvetica,sans-serif;
+		font-size:0.85em;
+		color:white;
+		letter-spacing: 1px;
+	}
+	
+	#drei ul{
+		list-style:none;
+		
+	}
+	
+	#drei li{
+		float:left;
+	}	
+	
+	
+	#drei a {
+		text-decoration:none;
+		color:white;
+		
+	}
+	
+	#drei a:hover{
+		color:black;
+	}
+		
+	
+	#rundesBild{
+		position:absolut;
+		z-index:10;
+		float:left;
+		padding:1px 0 0 4px;
+	}
+	
+	#dritteZeile {
+		background-color:#C9CBC9;
+		height:28px;
+		margin-top:-3px;	
+		width:969px;
+	}
+	
+	#dritteZeile p{
+		font-size:0.8em;
+		color:#707170;
+	}
+	
+	#datum {
+		float:left;
+		margin:6px 0px 0px -20px;
+		font-family: Arial,Helvetica,sans-serif;
+		font-size:0.9em;
+		
+	}
+	
+	#darstellung {
+		font-size:0.9em;
+		color:#707170;
+		float:left;
+		margin:6px 0px 0px 65px;
+		font-family: Arial,Helvetica,sans-serif;
+	}
+	
+	#relevanz {
+		float:left;
+		margin:4px 0 0 7px;
+	}
+	
+	#chronologie {
+		float:left;
+		margin:4px 0 0 1px;
+	}
+
+	#bunt {
+		float:left;   /* !important in Html */
+	}
+	
+	#bunt li {
+		float:left;
+		list-style:none;
+		margin: -16px 0 0 0;
+	}
+	
+	#mainContent {
+		background-color:#E0E3E0;
+		height:477px;
+		width:969px;   
+		margin-top:-6px;
+	}
+	
+	.advert{
+		padding: 6px 0 0 5px;;
+	}
+	
+	#artikelEins {
+		width:470px;
+		padding:5px 8px 0 7px;
+		float:left;
+		border-right: 1px solid;
+		border-color:#B5BAB5;
+	}
+	
+	#artikelZwei {	
+		width:470px;
+		float:left;
+		padding:5px 0 0 9px;
+	}
+	
+	.thema{
+		font-size:0.7em;
+		font-family: Arial,Helvetica,sans-serif;
+	}
+	
+	.grosseÜberschrift {
+		color:#162964;
+		font-size:1.3em;
+		font-weight:bold;
+		font-family: Arial,Helvetica,sans-serif;
+	} 
+	
+	.grosseÜberschrift2{
+		color:#162964;
+		font-family: Arial,Helvetica,sans-serif;
+		font-size:1em;
+	
+	}
+	
+	.postings {
+		color:#707170;
+		font-family: Arial,Helvetica,sans-serif;
+		font-size:0.7em;
+	}
+	
+	.text {
+		color:#000000;
+		font-family: Arial,Helvetica,sans-serif;
+		font-size:0.8em;
+	}
+	
+	.main2 {
+		background-color:#E0E3E0;
+		height:700px;
+		width:969px;   
+		border-top:1px solid #B5BAB5;
+		float:left;
+	}
+	
+	#gauche {
+		float:left;
+	}
+	
+	.gauche1 {
+		width:430px;
+		border-right: solid 1px #B5BAB5;
+		margin:5px 0 0 10px;
+	}
+	
+	.gauche2 {
+		width:430px;
+		border-right: solid 1px #B5BAB5;
+		margin:5px 0 0 10px;
+		border-top:1px solid #B5BAB5;
+		padding-top:5px;
+	}
+	
+	.medi {
+		width:660px;
+		border-right: solid 1px #B5BAB5;
+		height:500px;
+	}
+	
+	.medi1 {
+		margin:5px 0 0 450px;
+		width:200px;
+		border-bottom:solid 1px #B5BAB5;
+		padding-bottom:5px;
+	}
+	
+	.medi2 {
+		margin:7px 0 0 450px;
+		border-bottom:solid 1px #B5BAB5;
+		padding-bottom:5px;
+	}
+	
+	droit {
+		
+	}
+	
+	
+</style>
+	
+	
+	
+</head>
+
+<body> 
+
+<div id="container">
+	<div class="fixedwidth">
+		<div id="ersteZeile" >
+			
+			<div id="linksOben">	
+				<a href="default.asp"> 
+					<img src="images/hauptpic.png"> 
+				</a>
+			</div>
+			
+			<div id="abo">
+				<a href="default.asp">
+					<img src="images/abo.png">
+				</a>
+			</div>
+			<div id="mond">
+				<a href="default.asp">
+					<img src="images/wolke.png">
+				</a>
+			</div>
+			
+			<div id="temp">
+				<a href="default.asp">
+					<img src="images/temperatur.png">
+				</a>
+			</div>
+			
+			<div id="search">
+				<input type="text"/>
+			</div>
+		</div>
+	</div>
+		
+		<div class="break">
+		</div>
+		
+		
+	<div class="fixedwidth">	
+		<div id="zweiteZeile">
+			
+			<div id="rundesBild">
+				<image src="images/rund.png">
+			</div>
+			
+			<div id="eins">
+				<ul>
+					<li>International</li>
+					<li>Inland</li>
+					<li>Wirtschaft</li>
+					<li>Web</li>
+					<li>Sport</li>    
+					<li>Panorama</li>
+					<li>Etat</li>
+					<li>Kultur</li>
+					<li>Wissenschaft</li>
+					<li>Gesundheit</li>
+					<li>Bildung</li>
+					<li>Reisen</li>
+					<li>Lifestyle</li>
+					<li>Familie</li>
+				</ul>
+			</div>
+			
+				<div id="zwei">
+					<ul>
+						<li>Meinung</li>
+						<li>Blogs</li>
+						<li><i>die</i>Standard.at</li>
+						<li>daStandard.at</li>
+						<li>Greenlife</li>    
+					</ul>
+				
+				<div id="drei">
+					<ul>
+						<li style="padding-left:189px !important";><a href="http://www.w3schools.com"> JOBS | KARRIERE</a></li>
+						<li><a href="http://www.w3schools.com">IMMOBILIEN</a></li>
+						<li><a href="http://www.w3schools.com">AUTOMOBIL</a></li>
+						<li><a href="http://www.w3schools.com">ZUZWEIT</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="break">
+		</div>
+		
+	<div class="fixedwidth">
+		<div id="dritteZeile">
+			<div id="datum">
+				<p> Dienstag, 13. Jänner 2015, 12:59 | Update vor 8 Minuten</p>
+			</div>
+			<div id="darstellung">
+				<p>Darstellung</p>
+			</div>
+			<div id="relevanz">
+				<a href="default.asp">
+					<img src="images/relevanz.png">
+				</a>
+			</div>
+			<div id="chronologie">	
+				<a href="default.asp">
+					<img src="images/chronologie.png">
+				</a>
+			</div>
+			<div id="bunt">
+				<ul>
+					<li style="margin-left:188px !important";><a href="http://www.twitter.com"> <img src="images/blau.png" />  </a></li>
+					<li><a href="http://www.facebook.com"> <img src="images/dblau.png" />  </a></li>
+					<li><a href="http://www.plus.google.com"> <img src="images/rot.png" />  </a></li>
+					<li><a href="http://www.w3schools.com"> <img src="images/gelb.png" />  </a></li>
+				
+				</ul>
+			
+			</div>
+		</div>
+	</div>
+
+	<div class="break"> 
+	</div>
+	
+	<div id="mainContent">
+		<div class="advert">
+			<img src="images/werbung.png" />
+		</div>
+		
+		<div id="artikelEins">
+			<img src="images/bigPic.png" />
+			<h6 class="thema">SCHWEIZERISCHE NOTENBANK </h6>
+			<h2 class="grosseÜberschrift">Euro-Mindestkurs gekippt:Schweizer Franken steigt massiv</h2>
+			<p class="postings">948 Postings</p>
+			<p class="text">Börsen reagieren mit Kursstürzen, Fremdwährungskredite verteuern sich drastisch – Panik wegen verteuerter Kredite greift auch auf Ungarn über, der Forint sinkt auf ein Allzeittief zum Euro </p> 
+		</div>
+		<div id="artikelZwei">
+			<img src="images/bigPic2.png" />
+			<h6 class="thema">SCHWEIZER FRANKEN</h6>
+			<h2 class="grosseÜberschrift">Konsumentenschützer: "1.000 Österreicher mit Frankenkrediten akut betroffen"</h2>
+			<p class="postings">Interview | 222 Postings</p>
+			<p class="text">Häuslbauer, deren Kredite noch heuer fällig werden, könnten in finanzielle Schwierigkeiten kommen, sagt Jurist Thomas Hirmke</p> 
+		</div>
+	</div>
+	
+	<div class="break">
+	</div>
+	
+	
+	<div class="main2">
+		<div id="gauche">
+			<div class="gauche1">
+				<img src="images/artikelOrange.png" />
+				<h6 class="thema">HEFTIG SKANDALISIERTER ROMAN</h6>
+				<h2 class="grosseÜberschrift">Michel Houellebecqs "Unterwerfung": Das Ende der alten Welt"</h2>
+				<p class="postings">32 Postings</p>
+				<p class="text">Häuslbauer, deren Kredite noch heuer fällig werden, könnten in finanzielle Schwierigkeiten kommen, sagt Jurist Thomas Hirmke</p> 
+			</div>
+			
+			<div class="gauche2">
+				<img class="floatLeft" src="images/kerry.png" />
+				<h6 class="thema floatLeft" >US-AUSSENMINISTER IN WIEN</h6>
+				<h2 class="grosseÜberschrift2 ">Faymann gab Kerry einen Korb</h2>
+				<p class="postings">310 Postings</p>
+				<p class="text">Bundeskanzler sagte Termin mit dem US-Außenminister aus Zeitmangel ab - Angst vor TTIP soll der wahre Grund gewesen sein</p>
+			</div>
+		</div>	
+			
+		<div class="medi">
+			<div class="medi1">
+				<img src="images/heli.png" />
+				<h6 class="thema">KAMPF GEGEN DEN TERROR</h6>
+				<h2 class="grosseÜberschrift2">Teure Pläne für eine fliegende Polizei</h2>
+				<p class="postings">414 Postings</p>
+			</div>
+		
+			<div class="medi2">
+				<img src="images/ente.png" />
+				<h6 class="thema">BADEWANNENTAUGLICH</h6>
+				<h2 class="grosseÜberschrift2">Schnabel auf: Die Wundersame Vermehrung der Quietschente</h2>
+				<p class="postings">10 Postings</p>
+			</div>
+		</div>
+			
+			<div class="droit">
+				
+				<div class="droit1">
+					<img src="images/frey.png" />
+					<h6 class="thema">KOMMENTAR VON ERIC FREY</h6>
+					<h2 class="grosseÜberschrift2">Trau keinem stabilen Wechselkurs</h2>
+					<p class="text">Zwischen festen und freien Währungssystemen gibt es keinen sicheren Mittelweg</p>
+					<p class="postings">10 Postings</p>
+				</div>
+			
+			</div>
+		
+	</div>
+	
+	
+	
+</div>
+
+</body>
+
+</html>
